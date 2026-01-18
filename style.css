@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter-font {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared style  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar,
+.menu {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-liner-gr button {
+    background: linear-gradient(to right, #f8ed36, #ed1c94, #9127eb);
+}
+
+/* main style  */
+header {
+    padding: 30px;
+    background-color: #1A0B2E;
+    border-bottom: 1px solid rgb(168, 166, 166);
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo h2 {
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.gradient {
+    background: linear-gradient(to top, #f8ed36, #ed1c94, #9127eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.menu {
+    gap: 32px;
+}
+
+.menu li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.primary-btn button {
+    width: 135px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+/* media queary  */
+
+@media (max-width: 576px){
+    .logo h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+    .menu, .primary-btn button{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
