@@ -21,7 +21,11 @@
 }
 
 .navbar,
-.menu {
+.menu,
+.feature-contant,
+.host-content,
+.host-ul,
+.footer-ul {
     display: flex;
 }
 
@@ -41,6 +45,8 @@ a {
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .small-font {
@@ -258,7 +264,7 @@ header {
 
 .choose-content-box {
     background-color: #351165;
-    margin: 10px 15px;
+    margin: 10px 10px;
     border-radius: 40px;
 }
 
@@ -302,9 +308,141 @@ header {
 /* chooes section end  */
 
 
+/* feature section start */
+
+.feature {
+    padding: 120px 0px;
+    background-color: #1A0B2E;
+}
+
+.feature-contant {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-box {
+    background-color: #351165;
+    border-radius: 24px 24px 24px 24px;
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+iframe {
+    border-radius: 24px 24px 0px 0px;
+}
+
+.font-24 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.time {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
+}
 
 
-/* about section end  */
+.feature-box > *:not(iframe) {
+    margin-left: 24px;
+}
+
+.feature-box h3 {
+    margin-top: 24px;
+}
+
+.feature-box p {
+    margin: 12px 12px 12px 24px;
+}
+
+.feature-box span {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+
+/* feature section end */
+
+/* host section start  */
+.host {
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+
+}
+
+.host-content {
+    justify-content: center;
+    gap: 24px;
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.host-ul {
+    justify-content: start;
+    gap: 8px;
+
+}
+.host-ul li {
+    border: 1px solid #533C72;
+    padding: 10px 10px 5px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.host-h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.host-info p {
+    margin: 16px 0px;
+}
+
+/* host section end  */
+
+footer {
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 120px 0;
+}
+
+
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-img img {}
+
+.footer-ul {
+    margin: 32px 0px;
+}
+
+.footer-ul {
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.regular {
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #ffffff;
+}
+
 
 
 /* media queary*/
@@ -426,7 +564,7 @@ header {
         margin: 40px 0px 40px;
     }
     .about-content {
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
         margin: 0 auto;
     }
@@ -434,7 +572,6 @@ header {
     .about-box h2 {
         font-size: 2.5rem;
     }
-
 
     .about-boxes {
         display: grid;
@@ -474,6 +611,100 @@ header {
     /* choose section end */
 
 
+    /* feature section start  */
 
+
+    .feature {
+        padding: 40px 0px;
+    }
+    .feature-contant {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .feature-box {
+        background-color: #351165;
+        border-radius: 24px 24px 24px 24px;
+        /* max-width: 540px; */
+        width: 90%;
+        margin: 0px auto;
+    }
+    .feature-contant {
+        flex-direction: column;
+    }
+
+    .font-24 {
+        font-size: 1.25rem;
+    }
+
+    .feature-box > *:not(iframe) {
+        margin-left: 16px;
+    }
+
+    .feature-ul li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    /* feature section end  */
+
+    /* host section start  */
+
+    .host {
+        padding-bottom: 40px;
+    }
+    .host-content {
+        flex-direction: column;
+        align-items: center;
+        max-width: 520px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .host-info {
+        text-align: center;
+    }
+
+    .host-ul {
+        justify-content: center;
+    }
+
+    .host-content {
+        /* padding: 20px; */
+    }
+
+
+    /* host section end  */
+
+    /* footer section start  */
+
+    footer {
+        background-image: url(assets/footer-bg.png);
+        background-repeat: no-repeat;
+        background-size: 150% 100%;
+        background-position: center;
+        padding: 120px;
+    }
+
+    .footer-img img {
+        width: 219px;
+        height: 32px;
+    }
+
+    .footer-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 355px;
+        width: 100%;
+        margin: 30px auto;
+        height: 64px;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+
+    /* footer section end  */
 
 }
