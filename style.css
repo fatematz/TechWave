@@ -472,24 +472,22 @@ footer {
     }
 
     .banner {
-
         min-height: 70vh;
-        background-size: 150% 100%;
-
+        background-size: 177% 127%;
     }
 
-    .bg-circle-img {
-        width: 220px;
-        height: 220px;
-        margin-top: -203px;
-        margin-left: -100px;
-    }
+        .bg-circle-img {
+            width: 220px;
+            height: 220px;
+            margin-top: -203px;
+            margin-left: -110px;
+        }
 
     .mic-img {
         width: 80px;
         height: 120px;
         margin-top: -153px;
-        margin-left: -30px;
+        margin-left: -42px;
     }
 
     .badge-new {
@@ -501,7 +499,7 @@ footer {
         align-items: center;
         padding: 7px 0px 5px 0px;
         margin-top: -183px;
-        margin-left: 81px;
+        margin-left: 67px;
         border: none;
     }
 
