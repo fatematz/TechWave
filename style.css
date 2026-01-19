@@ -41,6 +41,15 @@ a {
     background: linear-gradient(to right, #f8ed36, #ed1c94, #9127eb);
 }
 
+.hover{
+transition: background-color 3s ease-in-out, color 3s ease-in-out;
+}
+
+.hover:hover{
+background-color: #ed1c94;
+transform: scale(1.2);
+}
+
 .font {
     font-size: 3rem;
     font-weight: 700;
@@ -119,8 +128,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
+
+
+
 
 .hero-image-container {
     position: relative;
@@ -128,6 +139,11 @@ header {
 
 .circle-bg {
     position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle-bg:hover {
+    transform: scale(1.04);
 }
 
 .bg-circle-img {
@@ -266,6 +282,10 @@ header {
     background-color: #351165;
     margin: 10px 10px;
     border-radius: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.choose-content-box:hover {
+    transform: scale(1.04);
 }
 
 .choose-content-box h3 {
@@ -280,14 +300,12 @@ header {
     grid-row: span 2;
     padding: 150px 40px;
     align-items: center;
-    /* height: 480px; */
 }
 
 .sh-box-2 {
     grid-column: span 2;
     grid-row: span 1;
     padding: 40px;
-    /* height: 225px; */
 }
 
 .sh-box-3 {
@@ -476,12 +494,12 @@ footer {
         background-size: 177% 127%;
     }
 
-        .bg-circle-img {
-            width: 220px;
-            height: 220px;
-            margin-top: -203px;
-            margin-left: -110px;
-        }
+    .bg-circle-img {
+        width: 220px;
+        height: 220px;
+        margin-top: -203px;
+        margin-left: -110px;
+    }
 
     .mic-img {
         width: 80px;
@@ -559,7 +577,8 @@ footer {
     }
 
     .hr-mr {
-        margin: 40px 0px 40px;
+        margin: 40px auto;
+        max-width: 491px;
     }
     .about-content {
         max-width: 400px;
@@ -574,10 +593,9 @@ footer {
     .about-boxes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 80px;
+        column-gap: 0px;
         row-gap: 40px;
         max-width: 500px;
-        /* width: 100%; */
         margin: 0 auto;
     }
 
@@ -604,6 +622,7 @@ footer {
 
     .choose-content-box {
         padding: 40px 30px;
+        margin: 10px 30px;
     }
 
     /* choose section end */
@@ -623,7 +642,6 @@ footer {
     .feature-box {
         background-color: #351165;
         border-radius: 24px 24px 24px 24px;
-        /* max-width: 540px; */
         width: 90%;
         margin: 0px auto;
     }
@@ -666,9 +684,7 @@ footer {
         justify-content: center;
     }
 
-    .host-content {
-        /* padding: 20px; */
-    }
+
 
 
     /* host section end  */
@@ -705,4 +721,27 @@ footer {
 
     /* footer section end  */
 
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .about-boxes {
+        margin: 0px 30px;
+    }
+
+    .hr-mr {
+        max-width: 940px;
+        margin: 80px auto;
+    }
+
+    .choose-content {
+        margin: 0px 30px;
+    }
+
+    .feature-contant {
+        margin: 0px 30px;
+    }
+
+    .host-content {
+        margin: 0px 30px;
+    }
 }
