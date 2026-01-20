@@ -500,7 +500,7 @@ footer {
     }
 
     .banner {
-        min-height: 70vh;
+        min-height: 60vh;
         background-size: 177% 127%;
     }
 
@@ -579,7 +579,7 @@ footer {
     /* about section start */
 
     .about {
-        padding: 0px 0px 60px;
+        padding: 40px 0px 40px;
     }
     .font {
         font-size: 2rem;
