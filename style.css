@@ -22,7 +22,7 @@
 
 .navbar,
 .menu,
-.feature-contant,
+.feature-content,
 .host-content,
 .host-ul,
 .footer-ul {
@@ -129,9 +129,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-
-
 
 .hero-image-container {
     position: relative;
@@ -261,7 +258,7 @@ header {
     gap: 80px;
 }
 
-/* chooes section start  */
+/* choose section start  */
 
 .chooes {
     padding: 120px 0px;
@@ -324,7 +321,7 @@ header {
 .sh-box-5 {
     padding: 40px;
 }
-/* chooes section end  */
+/* choose section end  */
 
 
 /* feature section start */
@@ -334,7 +331,7 @@ header {
     background-color: #1A0B2E;
 }
 
-.feature-contant {
+.feature-content {
     justify-content: space-between;
     gap: 30px;
 }
@@ -647,9 +644,10 @@ footer {
     .feature {
         padding: 40px 0px;
     }
-    .feature-contant {
+    .feature-content {
         justify-content: space-between;
         gap: 30px;
+        flex-direction: column;
     }
 
     .feature-box {
@@ -658,9 +656,7 @@ footer {
         width: 90%;
         margin: 0px auto;
     }
-    .feature-contant {
-        flex-direction: column;
-    }
+   
 
     .font-24 {
         font-size: 1.25rem;
@@ -750,7 +746,7 @@ footer {
         margin: 0px 30px;
     }
 
-    .feature-contant {
+    .feature-content {
         margin: 0px 30px;
     }
 
