@@ -42,7 +42,7 @@ a {
 }
 
 .hover {
-    transition: background-color 3s ease-in-out, color 3s ease-in-out;
+    transition: background-color 3s ease-in-out, color 3s ease-in-out, transform 2s ease-in-out; 
 }
 
 .hover:hover {
@@ -140,7 +140,7 @@ header {
 .circle-bg {
     position: relative;
     transition: transform 0.3s ease-in-out;
-  
+
 }
 
 .circle-bg:hover {
@@ -345,11 +345,11 @@ header {
     max-width: 580px;
     width: 100%;
     margin: 0 auto;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .feature-box:hover {
-    transform: scale(1.2);
+    transform: scale(1.04);
 }
 
 iframe {
@@ -406,8 +406,8 @@ iframe {
     transition: transform 0.4s ease-in-out;
 }
 
-.host-content:hover{
-        transform: scale(1.07);
+.host-content:hover {
+    transform: scale(1.04);
 }
 
 
