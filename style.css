@@ -41,13 +41,13 @@ a {
     background: linear-gradient(to right, #f8ed36, #ed1c94, #9127eb);
 }
 
-.hover{
-transition: background-color 3s ease-in-out, color 3s ease-in-out;
+.hover {
+    transition: background-color 3s ease-in-out, color 3s ease-in-out;
 }
 
-.hover:hover{
-background-color: #ed1c94;
-transform: scale(1.2);
+.hover:hover {
+    background-color: #ed1c94;
+    transform: scale(1.2);
 }
 
 .font {
@@ -140,6 +140,7 @@ header {
 .circle-bg {
     position: relative;
     transition: transform 0.3s ease-in-out;
+  
 }
 
 .circle-bg:hover {
@@ -344,6 +345,11 @@ header {
     max-width: 580px;
     width: 100%;
     margin: 0 auto;
+    transition: transform 0.4s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.2);
 }
 
 iframe {
@@ -397,7 +403,14 @@ iframe {
     background-color: #351165;
     padding: 40px;
     border-radius: 40px;
+    transition: transform 0.4s ease-in-out;
 }
+
+.host-content:hover{
+        transform: scale(1.07);
+}
+
+
 
 .host-ul {
     justify-content: start;
